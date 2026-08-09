@@ -1,0 +1,156 @@
+
+> @ares/coding-js@1.0.0 cfg:complex
+> node ./scripts/print-complex-cfg.mjs
+
+{
+  "function": "processValues",
+  "owner": null,
+  "kind": "function",
+  "params": [
+    "values",
+    "limit"
+  ],
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Start",
+      "line": 1,
+      "code": "processValues",
+      "next": 18
+    },
+    {
+      "id": 18,
+      "type": "VariableDeclaration",
+      "line": 2,
+      "code": "let sum=0;",
+      "next": 3
+    },
+    {
+      "id": 3,
+      "type": "Try",
+      "line": 4,
+      "code": "try",
+      "next": 10,
+      "catch": 5,
+      "finally": 4
+    },
+    {
+      "id": 10,
+      "type": "ForOf",
+      "line": 5,
+      "condition": "const value of values",
+      "code": "for(const value of values){if(value==null){continue;}if(value<0){throw new Error(\"negative value\");}sum+=value;if(sum>limit){break;}}",
+      "true": 16,
+      "false": 9
+    },
+    {
+      "id": 16,
+      "type": "If",
+      "line": 6,
+      "condition": "value==null",
+      "code": "if(value==null){continue;}",
+      "true": 17,
+      "false": 14
+    },
+    {
+      "id": 17,
+      "type": "Continue",
+      "line": 7,
+      "code": "continue;",
+      "next": 10,
+      "finally": 4
+    },
+    {
+      "id": 4,
+      "type": "Finally",
+      "line": 24,
+      "code": "finally",
+      "next": 7
+    },
+    {
+      "id": 7,
+      "type": "VariableDeclaration",
+      "line": 25,
+      "code": "const status=sum>limit?\"capped\":\"complete\";",
+      "next": 6
+    },
+    {
+      "id": 6,
+      "type": "Expression",
+      "line": 26,
+      "code": "void status;",
+      "next": 2
+    },
+    {
+      "id": 2,
+      "type": "End",
+      "line": 28,
+      "code": "processValues"
+    },
+    {
+      "id": 14,
+      "type": "If",
+      "line": 10,
+      "condition": "value<0",
+      "code": "if(value<0){throw new Error(\"negative value\");}",
+      "true": 15,
+      "false": 13
+    },
+    {
+      "id": 15,
+      "type": "Throw",
+      "line": 11,
+      "code": "throw new Error(\"negative value\");",
+      "next": 2,
+      "catch": 5,
+      "finally": 4
+    },
+    {
+      "id": 5,
+      "type": "Catch",
+      "line": 22,
+      "code": "catch (error)",
+      "next": 8
+    },
+    {
+      "id": 8,
+      "type": "Return",
+      "line": 23,
+      "code": "return-1;",
+      "next": 2,
+      "finally": 4
+    },
+    {
+      "id": 13,
+      "type": "Assignment",
+      "line": 14,
+      "code": "sum+=value;",
+      "next": 11
+    },
+    {
+      "id": 11,
+      "type": "If",
+      "line": 16,
+      "condition": "sum>limit",
+      "code": "if(sum>limit){break;}",
+      "true": 12,
+      "false": 10
+    },
+    {
+      "id": 12,
+      "type": "Break",
+      "line": 17,
+      "code": "break;",
+      "next": 9,
+      "finally": 4
+    },
+    {
+      "id": 9,
+      "type": "Return",
+      "line": 21,
+      "code": "return sum;",
+      "next": 2,
+      "finally": 4
+    }
+  ]
+}

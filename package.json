@@ -1,0 +1,34 @@
+{
+  "name": "@ares/coding-js",
+  "version": "1.0.0",
+  "description": "aReS JavaScript coding analyzer",
+  "main": "index.js",
+  "module": "index.js",
+  "bin": {
+    "ares-coding-js": "./bin/coding-js.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "node --test ./test/coding-js.test.js",
+    "cfg:complex": "node ./scripts/print-complex-cfg.mjs",
+    "structured:complex": "node ./scripts/print-complex-structure.mjs"
+  },
+  "author": "Roberto Stefani",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rstefani87info/ares-coding-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rstefani87info/ares-coding-js.git/issues"
+  },
+  "homepage": "https://github.com/rstefani87info/ares-coding-js.git#readme",
+  "dependencies": {
+    "@ares/core": "workspace:^",
+    "@babel/generator": "^7.28.3",
+    "@babel/parser": "^7.28.3",
+    "@babel/template": "^7.27.2",
+    "@babel/traverse": "^7.28.3",
+    "@babel/types": "^7.28.2"
+  }
+}
