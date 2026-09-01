@@ -11,7 +11,8 @@
   "scripts": {
     "test": "node --test ./test/coding-js.test.js",
     "cfg:complex": "node ./scripts/print-complex-cfg.mjs",
-    "structured:complex": "node ./scripts/print-complex-structure.mjs"
+    "structured:complex": "node ./scripts/print-complex-structure.mjs",
+    "ares-coding-js": "ares-coding-js"
   },
   "author": "Roberto Stefani",
   "license": "MIT",
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/rstefani87info/ares-coding-js.git#readme",
   "dependencies": {
     "@ares/core": "workspace:^",
+    "@ares/scd": "workspace:^",
     "@babel/generator": "^7.28.3",
     "@babel/parser": "^7.28.3",
     "@babel/template": "^7.27.2",

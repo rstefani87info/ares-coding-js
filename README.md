@@ -69,3 +69,20 @@ L'esempio sorgente si trova in `./examples/process-values.js`.
 - `renderCFGToMermaid`
 - `describeExecution`
 - `describeExecutions`
+
+## Documentazione
+
+### English
+- [Documentation Index](./docs/en/index.md)
+- [Coding JS](./docs/en/coding-js.md)
+
+### Italiano
+- [Indice Documentazione](./docs/it/index.md)
+- [Coding JS](./docs/it/coding-js.md)
+
+Documentazione legacy (italiano):
+- [Guida Generatore CFG JavaScript](./Guida-Generatore-CFG-JavaScript.md)
+
+## Task
+
+- [Tasks](./tasks/README.md)
